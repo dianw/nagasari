@@ -1,27 +1,15 @@
-/**
- * Install bower components.
- *
- * ---------------------------------------------------------------
- *
- * Installs bower components and copies the required files into the assets folder structure.
- *
- */
-
 module.exports = function(grunt) {
-
 	grunt.config.set('bower', {
-		install: {
+		dev: {
+			dest: '.tmp/public',
+			js_dest: '.tmp/public/vendor/js',
+			css_dest: '.tmp/public/vendor/styles',
+			fonts_dest: '.tmp/public/vendor/fonts',
 			options: {
-				targetDir: './assets/vendor',
-				layout: 'byType',
-				install: true,
-				verbose: false,
-				cleanTargetDir: true,
-				cleanBowerDir: true,
-				bowerOptions: {}
+				keepExpandedHierarchy: false
 			}
 		}
 	});
 
-	grunt.loadNpmTasks('grunt-bower-task');
+	grunt.loadNpmTasks('grunt-bower');
 };

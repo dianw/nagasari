@@ -23,6 +23,10 @@ var cssFilesToInject = [
 // Client-side javascript files to inject in order
 // (uses Grunt-style wildcard/glob/splat expressions)
 var jsFilesToInject = [
+  'vendor/js/jquery.js',
+
+  'vendor/js/angular.js',
+
   'vendor/**/*.js',
   
   // Load sails.io before everything else
