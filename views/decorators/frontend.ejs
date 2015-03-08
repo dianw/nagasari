@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>Narrow Jumbotron Template for Bootstrap</title>
+
+	<!--STYLES-->
+	<link rel="stylesheet" href="/vendor/styles/bootstrap.css">
+	<link rel="stylesheet" href="/vendor/styles/font-awesome.css">
+	<link rel="stylesheet" href="/styles/frontend.css">
+	<link rel="stylesheet" href="/styles/importer.css">
+	<!--STYLES END-->
+</head>
+
+<body ng-app="nagasari">
+
+	<div class="container">
+		<div class="header">
+			<nav>
+				<ul class="nav nav-pills pull-right">
+					<li role="presentation" class="active"><a href="#!/">Home</a></li>
+					<li role="presentation"><a href="#!/login">Login</a></li>
+					<li role="presentation"><a href="#!/register">Register</a></li>
+				</ul>
+			</nav>
+			<h3 class="text-muted">Project name</h3>
+		</div>
+
+		<div ng-view></div>
+
+		<footer class="footer">
+			<p>&copy; Company 2014</p>
+		</footer>
+
+	</div>
+
+	<!--SCRIPTS-->
+	<script src="/vendor/js/jquery.js"></script>
+	<script src="/vendor/js/angular.js"></script>
+	<script src="/vendor/js/angular-route.js"></script>
+	<script src="/vendor/js/angular-translate.js"></script>
+	<script src="/vendor/js/bootstrap.js"></script>
+	<script src="/vendor/js/ui-bootstrap-tpls.js"></script>
+	<script src="/js/dependencies/sails.io.js"></script>
+	<script src="/js/app.js"></script>
+	<script src="/js/controllers.js"></script>
+	<script src="/js/directives.js"></script>
+	<script src="/js/services.js"></script>
+	<!--SCRIPTS END-->
+</body>
+</html>
